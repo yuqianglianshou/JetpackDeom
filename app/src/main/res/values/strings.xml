@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JetpackDemo</string>
+    <string name="title1">1,初识Jetpack</string>
+    <string name="des1">"内容：一个imagebutton一个textview,点击imagebutton修改textview显示内容；位置：compare包下；当前4个button进入四个页面，第一个是mvc模式下的实现，第二个在一基础上修改为mvvm模式，第三个添加LiveData感知数据变化，第四个使用DataBinding实现数据的双向绑定。"</string>
+</resources>
