@@ -1,17 +1,18 @@
 package com.lq.jetpackdemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.lq.jetpackdemo.compare.ShowJetpackActivity;
 import com.lq.jetpackdemo.compare.ShowJetpackFourStepActivity;
-import com.lq.jetpackdemo.compare.ShowJetpackTwoStepActivity;
 import com.lq.jetpackdemo.compare.ShowJetpackThreeStepActivity;
+import com.lq.jetpackdemo.compare.ShowJetpackTwoStepActivity;
 import com.lq.jetpackdemo.databinding.ActivityMainBinding;
+import com.lq.jetpackdemo.lifecycles.TimerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ShowJetpackFourStepActivity.class));
+            }
+        });
+        binding.buttonGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TimerActivity.class));
             }
         });
     }
